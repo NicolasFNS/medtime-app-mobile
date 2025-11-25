@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--nome -->
+        <TextView
+            android:id="@+id/textViewMedicationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome da Medicação"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- dosagem -->
+        <TextView
+            android:id="@+id/textViewDosage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dosagem: 500mg"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- tipo-->
+        <TextView
+            android:id="@+id/textViewType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo: Comprimido"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- recorrência -->
+        <TextView
+            android:id="@+id/textViewRecurrence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recorrência: Diária"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- início -->
+        <TextView
+            android:id="@+id/textViewStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Início: 01/01/2024"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp" />
+
+        <!-- fim -->
+        <TextView
+            android:id="@+id/textViewEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fim: 31/01/2024"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
